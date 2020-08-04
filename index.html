@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mi Portafolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="description" content="Dise&ntildeador Web">
+<meta name="keywords" content="Mi portafolio, Jose Silva, dise&ntildeo, mis p&aacuteginas, an&eacutecdotas, fotos">
+<meta name="author" content="Jose Silva">
+<meta http-equiv="refresh" content="180">
+
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: article; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header'
+    'main main main main'
+    'menu menu article article'
+    'footer footer footer footer';
+  grid-gap: 0.6250em;
+  
+  background-image: linear-gradient(-90deg, rgb(0,54,77),rgb(240,240,240), rgb(0,54,77));
+  padding: 0.6250em;
+}
+
+.grid-container > header {
+  background-color:rgb(0,0,0);
+  text-align: justify;
+  padding: 0.625em 0.3125em;
+  font-size: 30px;
+text-shadow: 2px 5px 8px rgb(200,200,200);
+  color:rgba(200,255,255,1);
+
+  
+}
+.grid-container > article, footer, main {
+  background-image: url('https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=733&q=80');
+  background-size:cover;
+  text-align: justify;
+  padding: 10px 5px;
+  font-size: 30px;
+  color:rgba(255,255,255, 1);
+}
+  
+.grid-container > nav {
+  background-image: url('https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=733&q=80');
+background-size:cover;
+  text-align: justify;
+  padding: 20px 10px;
+  font-size:30px;
+  color:rgb(255,255,255);
+  text-align:center;
+}  
+
+.mifoto {
+width:300px;
+height:auto;
+float:left;
+border-style: solid;
+border-width: 10px;
+Border-color: rgba(0, 0, 0, 1);
+border-radius:10%;
+margin-right:10px;
+}
+
+.wfoto {
+width:300px;
+height:auto;
+float:right;
+border-style: none;
+margin-right:100px;
+margin-bottom:30px;
+}
+
+ul {
+margin: 50px 20%;
+width:50%;
+list-style-type: none;
+}
+li a {
+display:block;
+padding:50px 15px;
+border:0px;
+
+}
+a:hover{
+background-color:rgb(136,255,136);
+}
+
+@media screen and (max-width: 900px) {
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main'
+    'menu'
+    'article'
+    'footer';
+  grid-gap: 10px;
+  
+  background-image: linear-gradient(-90deg, rgb(0,54,77), rgb(101,181,184));
+  padding: 10px;
+}
+.mifoto {
+ width:80%;
+ height:auto;
+
+}
+
+.wfoto {
+ width:80%;
+ height:auto;
+ display:none;
+}
+}
+
+div.gallery {
+  margin: 10px 30%;
+  border: 1px solid #ccc;
+  width: 40%;
+align:center;
+}
+
+div.gallery:hover {
+  border: 2px solid #ccc;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 1px;
+  text-align: center;
+  font-size: 20px;
+}
+
+</style>
+</head>
+
+<body>
+  
+<div class="grid-container">
+
+<header class="item1">
+   <img class="mifoto"src="https://img.webme.com/vorschau/j/jlsilvag/mi%20foto%20en%20blanco%20y%20negro.jpg" alt="una de mis fotos"><br><br>
+
+  <img class="wfoto"src="https://images.unsplash.com/photo-1550438496-8c6e269e7886?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="una de mis fotos">
+  <h1 style="text-align:left;">Jos&eacute Silva</h1>
+  <p>Dise&ntildeador web</p>
+</header>
+
+<nav class="item2"><p>Algunos de mis trabajos</p><br><br>
+  <ul>
+     <li><a href="https://codepen.io/laurencio60/pen/JjYrXGW"  target=_blank">
+    <img src="https://img.webme.com/vorschau/j/jlsilvag/survey.JPG" alt="survey page" title="Visita la survey page" style="width:80%;height:auto;"><br>Survey page</a>
+    </li>
+    <li><a href="https://codepen.io/laurencio60/pen/oNjVdYM" target=_blank">
+    <img src="https://img.webme.com/vorschau/j/jlsilvag/barbijos.JPG" alt="Technical documentation page" title="visita la technical documentation page" style="width:80%;height:auto;"><br>Technical page</a>
+     </li>
+     <li><a href="https://codepen.io/laurencio60/pen/pojZaOP" target=_blank">
+     <img src="https://img.webme.com/vorschau/j/jlsilvag/mustang.JPG" alt="Landing page" title="visita la web landing page" style="width:80%;height:auto;"><br>Landing page</a>
+     </li>
+
+  </ul>
+ 
+</nav>
+  
+<article class="item3" style="text-align:justify;">
+
+Muchas de las cosas que hago son por inspiraci&oacuten, eso es algo que siempre tengo presente cuando pienso en elaborar una p&aacutegina. Los ejemplos siempre hablar&aacuten mejor.<br> Las p&aacuteginas en algunos de mis trabajos las hice utilizando s&oacutelo HTML y CSS.<br>En la survey web utilic&eacute box-container para colocar cada uno de los espacios.<br>En la Technical documentation page utilic&eacute un modelo parecido a la presentaci&oacute de prensa escrita.<br> En la landing page los espacios se crearon mediante containers de cada una de las etiquetas.<br> Esta web est&aacute basada en cuadr&iacuteculas.<br>Cada modelo puedes visitarlo en "Algunos de mis trabajos".
+
+</article>
+ 
+<article class="item4">Me gusta tomar fotograf&iacuteas de lugares y situaciones que me llaman la atenci&oacuten.<br>Te muestro algunas:<br>
+  <div class="gallery">
+    <a target="_blank" href="https://img.webme.com/pic/j/jlsilvag/Sol%20naciendo%20en%20el%20Illimani.jpg">
+    <img src="https://img.webme.com/pic/j/jlsilvag/Sol%20naciendo%20en%20el%20Illimani.jpg" alt="Sol naciendo en el Illimani" width="100%" height="auto"></a>
+    <div class="desc">Sol naciendo en el Illimani</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="https://img.webme.com/pic/j/jlsilvag/La%20Kishita%20posando.jpg">
+    <img src="https://img.webme.com/pic/j/jlsilvag/La%20Kishita%20posando.jpg" alt="Gata posando" width="600" height="400"></a>
+    <div class="desc">Kishita posando</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="https://img.webme.com/pic/j/jlsilvag/Atardecer%20rio%20Beni.jpg">
+    <img src="https://img.webme.com/pic/j/jlsilvag/Atardecer%20rio%20Beni.jpg" alt="Atardecer rio Beni" width="600" height="400"></a>
+    <div class="desc">Atardecer r&iacuteo Beni</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="https://img.webme.com/pic/j/jlsilvag/Baile%20de%20protesta.jpg">
+    <img src="https://img.webme.com/pic/j/jlsilvag/Baile%20de%20protesta.jpg" alt="Baile de protesta" width="600" height="400"></a>
+    <div class="desc">Baile de protesta</div>
+  </div>
+</article>
+  
+<footer class="item5" style="font-size:20px;">Fotos de Unplash y de mi propiedad<br>P&aacutegina elaborada y potenciada por Jos&eacute Silva<br>E-mail:<a href="mailto:jlsilvag@gmeil.com">jlsilvag@gmail.com</a>
+</footer>
+
+</div>
+
+</body>
+
+</html>
